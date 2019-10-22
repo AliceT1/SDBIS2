@@ -1,1 +1,1 @@
-# SDBIS 2
+# SDBIS 2 - MAD project
