@@ -1,1 +1,1 @@
-# SDBIS 2 - Noti project
+# SDBIS 2 - NOTI project
