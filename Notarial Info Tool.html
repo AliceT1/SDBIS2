@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notarial Info Tool</title>
+</head>
+
+<body>
+
+<h1>Notarial Info Tool</h1>
+<h3>1. Abstract</h3>
+
+<p>This document presents what is the Notarial Info Tool, how it is encoded and all of the requirements covered by this web application.</p>
+
+
+<h3>2. Introduction</h3>
+
+<p>The Notarial Info tool is a web application designed to support the process of locating notarial offices and services in Romania. This tool is dedicated for both local and foreign citizens who might be in the need of these services. Besides the functionality of providing the office location, this tool offers useful information on this domain, explaining some of the most common situations when notarial support is needed and what should the files for these situations look like (in terms of legal consultancy, documentation and so on).</p>
+
+<p>The location of the notarial offices is displayed through a map and information such as the address, services and prices, weekly schedule, contact details and reviews can be verified by the end user through a single click on a pin from the map. One special functionality added to this popup containing descriptive information of a notarial office is helping the user find his way to the notarial office in discussion, by using public transportation, if necessary.</p>
+
+<p>The application offers the possibility of multiple search, providing the best fitting answer for the user’s preferences and needs. The main options for the multiple search functionality are location (with the possibility of searching the notarial offices nearby user’s geographical position), notarial services (acknowledgements, oaths/affirmations, copies of legal documents, signature witnessing, legal consultancies), price range, reviews (from one to three stars) and timetable (opened now, or by different schedules).</p>
+
+
+<h3>3. Structure</h3>
+
+<p>The application is split in 3 main parts:</p>
+<p><b>The opening page</b> contains the map of Romania with public notarial offices from Romania displayed through map pins, the menu for the multiple search, each criteria having its own input fields of type checkbox for the user’s choice and input fields of type text for the case of the price ranges. One additional element useful for the user in the interaction with the map is a popup displayed by clicking on an office pin from the map which will show more information about the respective notarial office. The upper menu, containing the tabs of the web application (Home - current page, Notaries in Romania, Contact) and the search bar with the property of correcting users spelling in case they’ve mistaken a word, complete the list of components for this web page.</p>
+<p>The <b>“Notaries in Romania” page</b> has the role of informing the citizens, locals or foreigners, about notaries in general, what services they provide and why are they necessary together with some of the most common examples of moments that the majority of citizens get to live in life (buying a house, needing a legalized copy for employment file, selling a property, needing approval to represent another citizen in different situations and some more), offering them a list of guidelines considering the legal aspects, so that they will be well informed and prepared.</p>
+<p>Another important component of the application is the <b>Directions page</b> which can be reached by pressing the “Directions” button from the popup containing more information about a specific notarial office. This page will help the end user locate himself on the map, together with his destination and will show him the way, providing a list of public transportation able to take him there if the distance is not smaller than the difference between two bus stops.</p>
+
+
+<h3>4. Software</h3>
+
+<p>NOTI tool will be built with an open-source web scripting language, PHP version 7. Data will be stored in a MySQL database, also open source. The user interface will be developed in HTML, CSS, and JavaScript, the last one being used especially for the integration of the map into the website. In order to display the geographic location of a user’s device on a Google Map, the browser’s HTML5 Geolocation feature with the Maps JavaScript API will be used. This option has been chosen as for this web application it is essential to help the user locate himself in order to have a clear picture of what his options are. Therefore, the application must support the W3C Geolocation standard so that it will have the geolocation functionality available. This approach is the easiest and most fully-supported, providing a more accurate result than the browser’s function of using the IP address to detect a user’s location.</p>
+<p>The data from MySQL will be get from data.gov.ro, the central access point for open data sets delivered by public administration authorities and institutions. The table containing all public notarial offices from the country has almost 3000 entries from 15 different counties of Romania.</p>
+<p>The application will be able to run on any web server that supports PHP 7 and has a MySQL database. The application code will use Git version control, and all commits will be archived in a designated repository which can be made available to other members.</p>
+
+<h3>5. Design Elements</h3>
+
+<p>From the business point of view for this website application there are a few elements chosen to make the user’s interaction more pleasant. Taking into consideration that Noti is an informative website, its target group will be composed of people with questions, looking for options and answers. The legal domain doesn't come in handy for the people not related with this domain, therefore, this website should convey certain subconscious messages to the users such as trust, confidence and security. According to the psychology behind type choices, the font type for the user interface evokes a group of emotions. Since we are interested in showing stability and reliability, the best choice is the Sans Serif group of typos and considering that our message should be concise and clear, the proper font type is Calibri. As it is common to the user’s eyes, he or she will perceive it as comforting.</p>
+
+
+<h3>6. Storyboard</h3>
+
+<p style="text-align:center;"><img  src = "storyboard.png"
+         alt = "Noti Storyboard"></p>
+
+</body>
+</html>
+
