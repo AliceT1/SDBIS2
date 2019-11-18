@@ -1,1 +1,1 @@
-# SDBIS 2 - MAD project
+# SDBIS 2 - Noti project
