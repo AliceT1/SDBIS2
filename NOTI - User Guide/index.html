@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
+    <title>Notarial Info Tool - User Guide</title>
+    <link href="css/scholarly.min.css" rel="stylesheet">
+    <script src="js/scholarly.min.js"></script>
+</head>
+<body prefix="schema: http://schema.org">
+<header>
+    <div class="banner">
+        <img alt="Scholarly HTML logo" height="50" src="scholarly-html.svg" width="227">
+        <div class="status">Community Draft</div>
+    </div>
+    <h1>Noti User Guide</h1>
+</header>
+<div role="contentinfo">
+    <dl>
+        <dt>Authors</dt>
+        <dd>
+            <b>Alice Tesoi,
+                Anamaria Rosca,
+                Teodor Ivanov</b>
+        </dd>
+    </dl>
+</div>
+<section id="abstract" role="doc-abstract" typeof="sa:Abstract">
+    <h2>Overview</h2>
+	<h3>About NOTI</h3>
+    <p style="text-align: justify;
+  text-justify: inter-word;">The Notarial Info tool is a web application designed to support the process of locating notarial offices and
+        services in Romania.
+        This tool is dedicated for both local and foreign citizens who might be in the need of these services.
+        Besides the functionality of providing the office location, this tool offers useful information on this domain,
+        explaining some of the most common situations when notarial support is needed and what should the files for
+        these situations look like
+        (in terms of legal consultancy, documentation and so on).</p>
+	<h3>User Guide Overview</h3>
+	<p style="text-align: justify;
+  text-justify: inter-word;">The Noti User Guide is created in order to familiarize its user with the provided functionalities of the web application:</p>
+	<ul>
+		<li>Authentication</li>
+		<li>Advance Search</li>
+		<li>Map Interaction</li>
+		<li>Review</li>
+	</ul>
+</section>
+<section id="authentication" role="doc-introduction">
+    <h2>Authentication</h2>
+    <p style="text-align: justify;
+  text-justify: inter-word;">The Notarial Info tool is a web application which offers its users the option to sign up for an account in order to have access
+		to a suite of useful links to articles regarding the legal domain. These articles are meant to offer a clearer image of why notarial
+		offices are at use and for what exactly, but in the same time they are selected to guide people into a better understanding of the services 
+		they might need. Even if it's a situation regarding real estate purchases, family inheritance, being a legal tutor for someone or 
+		acting leagally on behalf of somebody else, these articles can offer more information about what needs to be done.
+	</p>
+	<table>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Noti Storyboard" src="registration.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The registration form requires a name of user's choice for his/her profile on the web application. The e-mail is only required for the validation
+				of the user account. Password is necessary only for login into the application.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:50%">
+				<p style="text-align:center;">
+				<img alt="Noti Storyboard" src="login.png" style="align:center; width:300px; height:auto;"></p>
+			</td>
+			<td style="width:50%">
+				<p style="text-align: justify; text-justify: inter-word;">The login form requires the name and password of a registered user.</p>
+			</td>
+		</tr>
+	</table>
+	<p style="text-align: justify; text-justify: inter-word;">Once the user has registered and logged in with the correct credentials, he/she will have access to the Useful Links section, will have the option to logout
+	instead of login/register option and will be greated for login into the web application:</p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="loggedUSer.png">
+</section>
+<section id="advancedSearch">
+    <h2>Advanced Search</h2>
+    <p> The Notarial Info tool offers its users a menu for multiple search, each criteria having its own input fields for the user’s
+        preferences. The user has the option to set the following filters: choosing the service(s) he/she is in the need of, the location, 
+		the price range and the review grade of the notarial/translation office. </p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="filterSelected.png">
+	<p>
+		Once the filters are selected, by pressing button "SEARCH", the notarial/translation offices with all user preferences respected will be
+		displayed through markers on the Google Map API.
+	</p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="searchedfinished.png">
+	<p>
+		If the user is selecting the location filter to <b>Near me</b> option, then he/she will be asked to agree to share his/her location.
+	</p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="locationRequired.png">
+</section>
+<section id="mapInteraction">
+    <h2>Map Interaction</h2>
+    <p>The Notarial Info tool is using one of the Google Map services for displaying the search results on a map. After a search is complete and the offices following the user's
+		preferences are visible through markers on the map, the user only has to click on one of the markers to get more informations about it (name, schedule, address, services and prices rating and
+		 transportation available in the near by area).</p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="popup.png">
+	
+</section>
+<section id="review">
+    <h2>Review</h2>
+    <p>The Review option of the Notarial Information Application is meant for the users logged into the application, whose location was tracked in the proximity of the office 
+	he/she wants to write a review for. Therefore, if a visitor wishes to publish a review, he won't be allowed to do that, but ask nicely to create an account and log in 
+	if he/she wishes to write the review.</p>
+	<img style="align:center; width:800px; height:auto;" alt="Noti Storyboard" src="errorforvisitorreview.png">
+	<p>For a logged in user, the link provided by the popup from the marker he clicked on on the map, a review form will be displayed asking for a name, the review itself and 
+	a star grade from one to five.</p>
+	<img style="align:center; width:370px; height:auto;" alt="Noti Storyboard" src="review.png">
+	<img style="align:center; width:400px; height:auto;" alt="Noti Storyboard" src="reviewed.png">
+</section>
+<section id="knownissues">
+    <h2>Known Issues</h2>
+    <p>This is the first version of the Notarial Info tool and more improvements will be added to the application. The known issues of the current version are:</p>
+	<ul>
+		<li>An option for user to change its password is missing.</li>
+		<li>An option for user to reset its password if forgotten.</li>
+		<li>Review form does not recognize the logged user's name to fill it in automatically.</li>
+		<li>The information of the notarial and translation offices are not received dynamically so there is no guarantee that the information are 100% accurate. Last uptade was made on 12.12.2019</li>
+		<li>The information of the transportation available in the near-by area of an office are not received automatically from the official CTP website, so if a change appears it must be checked manually.</li>
+	</ul>
+	<br><br>
+</section>
+</body>
+</html>
